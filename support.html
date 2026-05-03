@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدعم — مهامي</title>
+    <style>
+        :root {
+            --bg: #F7F4EE; --ink: #1A1A1D; --ink-secondary: #6B6B70;
+            --accent: #8B6F47; --accent-soft: #E8DFD0;
+            --surface: #FFFFFF; --divider: #EAE4D8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0F0F10; --ink: #F2EFE8; --ink-secondary: #A0A0A5;
+                --accent: #C9A876; --accent-soft: #3D3428;
+                --surface: #1A1A1C; --divider: #2B2B2E;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Arabic", "Helvetica Neue", sans-serif;
+            background: var(--bg); color: var(--ink);
+            margin: 0; padding: 40px 20px; line-height: 1.8;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+        h1 { font-size: 28px; margin: 0 0 8px; }
+        .subtitle { color: var(--ink-secondary); margin-bottom: 32px; }
+        h2 {
+            font-size: 20px; margin-top: 40px; color: var(--accent);
+            border-bottom: 1px solid var(--divider); padding-bottom: 8px;
+        }
+        p { margin: 16px 0; }
+        a { color: var(--accent); }
+        .contact-card {
+            background: var(--surface);
+            border: 1px solid var(--divider);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            text-align: center;
+        }
+        .contact-card .email {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .contact-card .response {
+            color: var(--ink-secondary);
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        .faq {
+            background: var(--surface);
+            border: 1px solid var(--divider);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+        }
+        .faq summary {
+            cursor: pointer;
+            font-weight: 600;
+            outline: none;
+        }
+        .faq[open] summary {
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        .faq p {
+            margin: 0;
+            color: var(--ink-secondary);
+        }
+        .english {
+            margin-top: 64px; padding-top: 48px;
+            border-top: 2px solid var(--divider);
+            direction: ltr; text-align: left;
+        }
+        .english h2 { color: var(--accent); }
+        .back {
+            display: inline-block; margin-bottom: 32px;
+            color: var(--ink-secondary); text-decoration: none; font-size: 14px;
+        }
+        .back:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back">← الرئيسيّة</a>
+
+        <h1>الدعم</h1>
+        <p class="subtitle">سعيدون بمساعدتك. اكتب لنا، نردّ.</p>
+
+        <div class="contact-card">
+            <a href="mailto:twq983@gmail.com" class="email">twq983@gmail.com</a>
+            <p class="response">نردّ خلال ٢٤-٤٨ ساعة عمل.</p>
+        </div>
+
+        <h2>أسئلة شائعة</h2>
+
+        <details class="faq">
+            <summary>كيف أُلغي اشتراك Pro؟</summary>
+            <p>
+                من iOS Settings → Apple ID → الاشتراكات → اختر Mahami → إلغاء.
+                الإلغاء يوقف التجديد التلقائي. تستمر الميزات حتى نهاية الفترة المدفوعة.
+            </p>
+        </details>
+
+        <details class="faq">
+            <summary>هل بياناتي محفوظة على خادمكم؟</summary>
+            <p>
+                لا. كل بياناتك محفوظة محليًا على iPhone فقط. لا نملك خوادم لبياناتك.
+                راجع <a href="/privacy">سياسة الخصوصيّة</a>.
+            </p>
+        </details>
+
+        <details class="faq">
+            <summary>كيف أستعيد مشترياتي على جهاز جديد؟</summary>
+            <p>
+                افتح Paywall من تبويب "أنا" → اضغط "استعادة" أعلى يمين الشاشة.
+                أو من Settings → الاشتراك → استعادة المشتريات.
+                تأكد من تسجيل الدخول بنفس Apple ID المستخدم للشراء.
+            </p>
+        </details>
+
+        <details class="faq">
+            <summary>لم تصلني الإشعارات. ماذا أفعل؟</summary>
+            <p>
+                تأكد من السماح بالإشعارات: iOS Settings → Mahami → Notifications.
+                ثم من داخل التطبيق: أنا → التذكيرات → تأكد من حالة الإذن.
+            </p>
+        </details>
+
+        <details class="faq">
+            <summary>الـ Widget لا يُحدِّث المهام.</summary>
+            <p>
+                الـ Widget يُحدِّث كل ٣٠ دقيقة تلقائيًا. لتحديث فوري، افتح التطبيق وأضف/أكمل مهمة.
+                قد يستغرق ثواني لظهور التغيير على Widget.
+            </p>
+        </details>
+
+        <details class="faq">
+            <summary>لماذا حد الـ ٥ مهام في النسخة المجانيّة؟</summary>
+            <p>
+                لاستمرار تطوير التطبيق بدون إعلانات. النسخة المجانيّة كافية لتجربة كاملة لفلسفة Mahami.
+                إن احتجت أكثر، Pro يفتح المهام بلا حدود + ميزات أعمق.
+            </p>
+        </details>
+
+        <details class="faq">
+            <summary>وجدت خطأ في التطبيق.</summary>
+            <p>
+                أرسل لنا تفاصيل المشكلة + إصدار iOS + إصدار Mahami (Settings → عن التطبيق)
+                إلى <a href="mailto:twq983@gmail.com">twq983@gmail.com</a>. نشكرك على الإبلاغ.
+            </p>
+        </details>
+
+        <h2>روابط مهمّة</h2>
+        <p>
+            <a href="/privacy">سياسة الخصوصيّة</a> ·
+            <a href="/terms">شروط الاستخدام</a>
+        </p>
+
+        <!-- English -->
+        <div class="english">
+            <h1>Support</h1>
+            <p class="subtitle">Happy to help. Drop us a line, we reply.</p>
+
+            <div class="contact-card">
+                <a href="mailto:twq983@gmail.com" class="email">twq983@gmail.com</a>
+                <p class="response">We reply within 24-48 business hours.</p>
+            </div>
+
+            <h2>FAQ</h2>
+
+            <details class="faq">
+                <summary>How do I cancel my Pro subscription?</summary>
+                <p>
+                    Go to iOS Settings → Apple ID → Subscriptions → select Mahami → Cancel.
+                    Cancellation stops auto-renewal. Features continue until end of paid period.
+                </p>
+            </details>
+
+            <details class="faq">
+                <summary>Is my data stored on your servers?</summary>
+                <p>
+                    No. All your data is stored locally on your iPhone only. We have no servers for your data.
+                    See <a href="/privacy">Privacy Policy</a>.
+                </p>
+            </details>
+
+            <details class="faq">
+                <summary>How do I restore purchases on a new device?</summary>
+                <p>
+                    Open Paywall from "Me" tab → tap "Restore" at the top.
+                    Or Settings → Subscription → Restore Purchases.
+                    Make sure you're signed in with the same Apple ID used for the purchase.
+                </p>
+            </details>
+
+            <details class="faq">
+                <summary>I'm not receiving notifications.</summary>
+                <p>
+                    Confirm permission: iOS Settings → Mahami → Notifications.
+                    Inside app: Me → Reminders → check authorization status.
+                </p>
+            </details>
+
+            <details class="faq">
+                <summary>Why a 5-task limit in the free version?</summary>
+                <p>
+                    To support ongoing development without ads. The free version is enough to fully experience
+                    Mahami's philosophy. Pro unlocks unlimited tasks + deeper features.
+                </p>
+            </details>
+
+            <h2>Important Links</h2>
+            <p>
+                <a href="/privacy">Privacy Policy</a> ·
+                <a href="/terms">Terms of Use</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

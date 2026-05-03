@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهامي — Mahami</title>
+    <style>
+        :root {
+            --bg: #F7F4EE;
+            --ink: #1A1A1D;
+            --ink-secondary: #6B6B70;
+            --accent: #8B6F47;
+            --accent-soft: #E8DFD0;
+            --surface: #FFFFFF;
+            --divider: #EAE4D8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0F0F10;
+                --ink: #F2EFE8;
+                --ink-secondary: #A0A0A5;
+                --accent: #C9A876;
+                --accent-soft: #3D3428;
+                --surface: #1A1A1C;
+                --divider: #2B2B2E;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Arabic", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .meem {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: var(--accent-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 48px;
+            font-weight: 600;
+            color: var(--accent);
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin: 0 0 8px;
+        }
+        .tagline {
+            text-align: center;
+            color: var(--ink-secondary);
+            margin: 0 0 48px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            margin-bottom: 12px;
+        }
+        nav a {
+            display: block;
+            padding: 16px 20px;
+            background: var(--surface);
+            border: 1px solid var(--divider);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--ink);
+            transition: border-color 0.2s;
+        }
+        nav a:hover {
+            border-color: var(--accent);
+        }
+        nav a span.label {
+            display: block;
+            font-weight: 600;
+        }
+        nav a span.desc {
+            display: block;
+            color: var(--ink-secondary);
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: var(--ink-secondary);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="meem">م</div>
+        <h1>مهامي اليومية</h1>
+        <p class="tagline">يومك، أهدأ.</p>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="/privacy">
+                        <span class="label">سياسة الخصوصيّة</span>
+                        <span class="desc">Privacy Policy</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/terms">
+                        <span class="label">شروط الاستخدام</span>
+                        <span class="desc">Terms of Use</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/support">
+                        <span class="label">الدعم</span>
+                        <span class="desc">Support</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer>
+            © 2026 Mahami. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

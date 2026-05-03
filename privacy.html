@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصيّة — مهامي</title>
+    <style>
+        :root {
+            --bg: #F7F4EE;
+            --ink: #1A1A1D;
+            --ink-secondary: #6B6B70;
+            --accent: #8B6F47;
+            --accent-soft: #E8DFD0;
+            --surface: #FFFFFF;
+            --divider: #EAE4D8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0F0F10;
+                --ink: #F2EFE8;
+                --ink-secondary: #A0A0A5;
+                --accent: #C9A876;
+                --accent-soft: #3D3428;
+                --surface: #1A1A1C;
+                --divider: #2B2B2E;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Arabic", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--ink);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.8;
+        }
+        .container { max-width: 720px; margin: 0 auto; }
+        h1 { font-size: 28px; margin: 0 0 8px; }
+        .updated { color: var(--ink-secondary); font-size: 14px; margin-bottom: 32px; }
+        h2 {
+            font-size: 20px;
+            margin-top: 40px;
+            color: var(--accent);
+            border-bottom: 1px solid var(--divider);
+            padding-bottom: 8px;
+        }
+        p { margin: 16px 0; }
+        ul { padding-inline-start: 24px; }
+        li { margin-bottom: 8px; }
+        a { color: var(--accent); }
+        .lang-toggle {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .lang-toggle a {
+            display: inline-block;
+            padding: 8px 16px;
+            border: 1px solid var(--divider);
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--ink-secondary);
+            font-size: 14px;
+        }
+        .english {
+            margin-top: 64px;
+            padding-top: 48px;
+            border-top: 2px solid var(--divider);
+            direction: ltr;
+            text-align: left;
+        }
+        .english h2 { color: var(--accent); }
+        .back {
+            display: inline-block;
+            margin-bottom: 32px;
+            color: var(--ink-secondary);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back">← الرئيسيّة</a>
+
+        <h1>سياسة الخصوصيّة</h1>
+        <p class="updated">آخر تحديث: ٣ مايو ٢٠٢٦</p>
+
+        <p>
+            تطبيق <strong>مهامي اليومية</strong> ("التطبيق") مُصمَّم ليحترم خصوصيّتك بالكامل.
+            هذه الوثيقة توضح كيفيّة تعاملنا مع بياناتك.
+        </p>
+
+        <h2>الخلاصة</h2>
+        <p>
+            <strong>كل بياناتك تبقى على جهازك. لا نجمع، ولا نُرسل، ولا نُخزِّن أي بيانات على خوادمنا.</strong>
+        </p>
+
+        <h2>البيانات التي يُخزّنها التطبيق محليًا</h2>
+        <ul>
+            <li>المهام التي تُنشئها (العنوان، الوقت، الأولويّة، الطاقة، التكرار).</li>
+            <li>سجلّات اليوم (طقس الإغلاق، المزاج، النيّة).</li>
+            <li>جلسات التركيز (المدّة، المهمّة المرتبطة).</li>
+            <li>إعداداتك (الإيقاع، الثيم، وقت التذكير).</li>
+        </ul>
+        <p>
+            تُحفظ كلّها في قاعدة بيانات <code>SwiftData</code> داخل صندوق التطبيق على iPhone.
+            لا تُرسَل لأي جهة خارجيّة.
+        </p>
+
+        <h2>ما لا نجمعه</h2>
+        <ul>
+            <li>لا نجمع أيّ بيانات شخصيّة (اسم، بريد، عمر، موقع).</li>
+            <li>لا نستخدم أيّ أدوات تحليلات (Analytics).</li>
+            <li>لا نتتبّع نشاطك خارج التطبيق.</li>
+            <li>لا نستخدم أيّ مكتبات طرف ثالث (SDKs).</li>
+        </ul>
+
+        <h2>المشتريات داخل التطبيق</h2>
+        <p>
+            تُدار اشتراكات Pro عبر StoreKit من Apple. نحن لا نرى تفاصيل الدفع.
+            Apple تتعامل مع الفواتير وفق سياستها.
+            <a href="https://www.apple.com/legal/internet-services/itunes/">سياسة Apple</a>.
+        </p>
+
+        <h2>الإشعارات</h2>
+        <p>
+            الإشعارات محليّة بالكامل عبر <code>UNUserNotificationCenter</code>.
+            لا تمرّ على أيّ خادم. تحتاج إذنك لتفعيلها، ويمكنك إيقافها من إعدادات iOS.
+        </p>
+
+        <h2>الـ Widget</h2>
+        <p>
+            يقرأ الـ Widget بياناتك من نفس قاعدة البيانات المحليّة عبر App Group.
+            لا يتّصل بأيّ شبكة.
+        </p>
+
+        <h2>حقوقك</h2>
+        <p>
+            لأنّ بياناتك على جهازك فقط، حذف التطبيق يحذف كلّ شيء.
+            لا داعي للتواصل معنا لحذف بياناتك.
+        </p>
+
+        <h2>التواصل</h2>
+        <p>
+            للاستفسار: <a href="mailto:twq983@gmail.com">twq983@gmail.com</a>
+        </p>
+
+        <h2>تحديثات هذه السياسة</h2>
+        <p>
+            قد نُحدِّث هذه السياسة. تاريخ آخر تحديث ظاهر في الأعلى.
+            تغييرات جوهريّة ستُبلَّغ داخل التطبيق.
+        </p>
+
+        <!-- English version -->
+        <div class="english">
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last updated: May 3, 2026</p>
+
+            <p>
+                <strong>Mahami</strong> ("the app") is designed to respect your privacy completely.
+                This document explains how we handle your data.
+            </p>
+
+            <h2>Summary</h2>
+            <p>
+                <strong>All your data stays on your device. We do not collect, transmit, or store any data on our servers.</strong>
+            </p>
+
+            <h2>Data stored locally on your device</h2>
+            <ul>
+                <li>Tasks you create (title, time, priority, energy, recurrence).</li>
+                <li>Day records (shutdown ritual, mood, intention).</li>
+                <li>Focus sessions (duration, associated task).</li>
+                <li>Your settings (rhythm, theme, reminder time).</li>
+            </ul>
+            <p>
+                All stored in <code>SwiftData</code> inside the app sandbox on your iPhone.
+                Nothing is sent to any external service.
+            </p>
+
+            <h2>What we do NOT collect</h2>
+            <ul>
+                <li>No personal information (name, email, age, location).</li>
+                <li>No analytics tools.</li>
+                <li>No tracking outside the app.</li>
+                <li>No third-party SDKs.</li>
+            </ul>
+
+            <h2>In-App Purchases</h2>
+            <p>
+                Pro subscriptions are managed via Apple's StoreKit. We do not see your payment details.
+                Apple handles billing per their policy.
+                See <a href="https://www.apple.com/legal/internet-services/itunes/">Apple's Privacy Policy</a>.
+            </p>
+
+            <h2>Notifications</h2>
+            <p>
+                All notifications are local via <code>UNUserNotificationCenter</code>.
+                They never pass through any server. Permission required; can be disabled in iOS Settings.
+            </p>
+
+            <h2>Widget</h2>
+            <p>
+                The Widget reads your data from the same local database via App Group.
+                It does not connect to any network.
+            </p>
+
+            <h2>Your Rights</h2>
+            <p>
+                Since your data is only on your device, deleting the app deletes everything.
+                No need to contact us to delete your data.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                Questions: <a href="mailto:twq983@gmail.com">twq983@gmail.com</a>
+            </p>
+
+            <h2>Changes to this Policy</h2>
+            <p>
+                We may update this policy. The "Last updated" date appears at the top.
+                Material changes will be communicated within the app.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
